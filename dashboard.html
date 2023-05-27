@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dash.css">
+  <title>Recipe Platform Dashboard</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #ffe9d5;">
+    <a class="navbar-brand" href="#"><img src="logo.png" alt="" style="width: 200px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" style="color: black; font-weight: 600;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black; font-weight: 600;">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black; font-weight: 600;">My Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black; font-weight: 600;">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container mt-3">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Discover recipes" aria-label="Search">
+      <button class="btn btn-outline-warning" type="submit">Search</button>
+    </form>
+  </div>
+  
+
+  
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <h5>Popular</h5>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>
+                <div class="container">
+                    <div class="row border border-5 border-warning rounded rounded-5 py-2 justify-content-center ">
+                        <div class="col-4 border border-3">
+                            <a href=""> <img src="karekare.png" alt="" class="mx-4 mt-2" style="width: 100px;"> </a>
+                        </div>
+                        <div class="col-7">
+                            <a href="">
+                            <p class="h5 text-dark">Kare-Kare</p></a>
+                            <p class=" text-dark" style="font-size: 13px; color: black;">Kare Kare is a traditional Filipino stew complimented with a thick savory peanut sauce. The commonly used meats ... <a href="">See more</a></p>
+                        
+                        </div>
+                   
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="container my-3">
+                    <div class="row border border-5 border-warning rounded rounded-5 py-2 justify-content-center">
+                        <div class="col-4 border border-3 ">
+                           <a href=""><img src="adobo.png" alt="" class="mx-4 mt-2"style="width: 100px;" ></a> 
+                        </div>
+                        <div class="col-7">
+                            <a href=""><p class="h5 text-dark">Pork Adobo</p></a>
+                            <p style="font-size: 13px; color: black;">It is a dish composed of pork slices cooked in soy sauce, vinegar, and garlic. There are version wherein onions... <a href="">See more</a></p>
+                        </div>
+                    </div>
+                </div>
+              </li>
+              <li> <div class="container my-3">
+                <div class="row border border-5 border-warning rounded rounded-5 py-2 justify-content-center">
+                    <div class="col-4 border border-3">
+                       <a href=""> <img src="sisig.png" alt="" class="mx-4 mt-2" style="width: 100px;"></a>
+                    </div>
+                    <div class="col-7">
+                       <a href=""><p class="h5">Pork Sisig</p></a> 
+                        <p style="font-size: 13px;  color: black;">It can be considered as a main dish or an appetizer. The composition of this dish is mainly of pig’s parts such... <a href="">See more</a></p>
+                    </div>
+                </div>
+            </div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h5>Share you own recipe!</h5>
+          </div>
+          <form>
+            <div class="mb-3">
+              <label for="recipeName" class="form-label">Recipe Name</label>
+              <input type="text" class="form-control" id="recipeName" placeholder="Enter dish name">
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <textarea class="form-control" id="description" rows="2" placeholder="Enter recipe description"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="ingredients" class="form-label">Ingredients</label>
+              <textarea class="form-control" id="ingredients" rows="2" placeholder="Enter recipe ingredients (separated by commas)"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="instructions" class="form-label">Instructions</label>
+              <textarea class="form-control" id="instructions" rows="2" placeholder="Enter recipe instructions"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="image" class="form-label">Image</label>
+              <input class="form-control" type="file" id="image">
+            </div>
+            <button type="submit" class="btn text-light " style="background-color: #ff8b0f;">Upload Recipe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!------------------Footer------------------------->
+  <section id="contact " style="margin-bottom: 1%; margin-top: 10%;">
+    <div class="container ">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 ">
+        <div class="col mb-3">
+          <a class="navbar-brand" href="#">
+      <span style="font-size: 30px; color: #FFCA2C; font-weight: 900;">dishCovery</span>
+          </a>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+    
+        <div class="col mb-1">
+          <h5 style="font-size: 30px; text-shadow: 4px 1px  #FFCA2C;">Navigations</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-body-secondary fa-arrow-right"> Home </a></li>
+            <li class="nav-item mb-2"><a href="#feature" class="nav-link p-0 text-body-secondary fa-arrow-right"> Feature</a></li>
+            <li class="nav-item mb-2"><a href="#footer" class="nav-link p-0 text-body-secondary fa-arrow-right"> Contact</span></a></li>
+           
+          </ul>
+        </div>
+    
+        <div class="col mb-1">
+          <h5 style="font-size: 30px; text-shadow: 4px 1px  #FFCA2C;">Contact Us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary  fa-arrow-right" > Urdaneta City, Pangasinan</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary fa-arrow-right"> 09917371829</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary fa-arrow-right"> bagcal@gmail.com</a></li>
+           
+           
+          </ul>
+        </div>
+    
+        <div class="col mb-1">
+          <h5 style="font-size: 30px;text-shadow: 4px 1px  #FFCA2C;">Follow Us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary fab fa-facebook" > Facebook</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary fab fa-github" > GitHub</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary fab fa-instagram"> Instagram</a></li>
+           
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+  
+  <footer class="footerr bg-dark">
+    <p class="text-center text-light">&copy; 2023 dishCovery. All rights reserved.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
